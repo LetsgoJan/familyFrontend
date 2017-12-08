@@ -1,0 +1,23 @@
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+  <div class="form-group">
+    <label>Voornaam</label>
+    <input
+      class="form-control"
+      ngModel
+      name="firstName"
+      #name="ngModel">
+    <label>Tussenvoegsel</label>
+    <input
+      class="form-control"
+      ngModel
+      name="middleName"
+      #name="ngModel">
+    <label>Achternaam</label>
+    <input
+      class="form-control"
+      ngModel
+      name="lastName"
+      #name="ngModel">
+    <button type="submit" class="submit">Maak nieuw familielid</button>
+  </div>
+</form>
